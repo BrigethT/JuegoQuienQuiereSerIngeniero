@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B760B8BC-4D75-437F-A586-EAA2052F2943}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UIJuegoOrdenarPreguntasYRespuestas</RootNamespace>
+    <AssemblyName>UIJuegoOrdenarPreguntasYRespuestas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormularioJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioJuego.Designer.cs">
+      <DependentUpon>FormularioJuego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPrincipal.Designer.cs">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioJuego.resx">
+      <DependentUpon>FormularioJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPrincipal.resx">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\BUHO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\millonario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\MILLONARIO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\menu_w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\requerimientos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\BUHO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\diseño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\codificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\pruebas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\nuevapartida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLQuienQuiereSerIngeniero\BLQuienQuiereSerIngeniero.csproj">
+      <Project>{29dfebdd-e0cd-400a-9091-286fface8500}</Project>
+      <Name>BLQuienQuiereSerIngeniero</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EQuienQuiereSerIngeniero\EQuienQuiereSerIngeniero.csproj">
+      <Project>{dbdd13c7-8d7c-4542-86a1-458fcb023f6c}</Project>
+      <Name>EQuienQuiereSerIngeniero</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\jugar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\flecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\flecha-125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\flecha-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\mr0V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\DA1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\mr1v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\mr-1V.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\DAperder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\DAperder1000x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\DAganar.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Musica\Intro.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
